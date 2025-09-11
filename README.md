@@ -2,7 +2,7 @@
 Utilização de python para automatizar funcionalidade do ArcGIS Pro por meio da biblioteca Arcpy, para criação de layers de classificação de vias, calculo de extensão em metros e identificação de vias a sinalizar.
 
 ## Objetivo
-Scripts para: classificar vias, calculo de extensão em metros, gerar camadas para sinalização e exportar relatórios.
+Scripts para: classificar vias, calcular de extensão em metros, gerar camadas para sinalização e exportar relatórios.
 
 ## Estrutura
 - `src/` — scripts Python (classificar_vias.py, sinalizacao_vias.py, utils.py)
