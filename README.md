@@ -1,5 +1,5 @@
 # Arcgis_Vias_Recife
-Utilização do python para automatizar funcionalidade do ArcGIS Pro por meio da biblioteca Arcpy, para criação de layers de classificação de vias, calculo de extensão em metros e identificação de vias a sinalizar.
+Utilização de python para automatizar funcionalidade do ArcGIS Pro por meio da biblioteca Arcpy, para criação de layers de classificação de vias, calculo de extensão em metros e identificação de vias a sinalizar.
 
 ## Objetivo
 Scripts para: classificar vias, calculo de extensão em metros, gerar camadas para sinalização e exportar relatórios.
