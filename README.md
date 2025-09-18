@@ -1,5 +1,5 @@
 # utilidades_arcgis
-Utilização de python para automatizar funcionalidade do ArcGIS Pro por meio da biblioteca Arcpy, para criação de layers de classificação de vias, calculo de extensão em metros, identificação de vias a sinalizar e criação de novos shapefiles de acordo com categoria escolhida.
+Este repositório apresenta a utilização de Python, por meio da biblioteca ArcPy, para automatizar processos no ArcGIS Pro relacionados à gestão viária. As ferramentas desenvolvidas permitem criar layers de classificação de vias, calcular extensões em metros, identificar trechos a serem sinalizados e gerar novos shapefiles a partir de categorias selecionadas. O objetivo é aprimorar a análise de dados sobre a malha viária urbana, oferecendo suporte mais ágil e preciso para estudos e tomadas de decisão.
 
 ## Objetivo
 Scripts para: classificar vias, calcular de extensão em metros, gerar camadas para sinalização e exportar relatórios.
