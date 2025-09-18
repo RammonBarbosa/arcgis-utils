@@ -5,19 +5,27 @@ Utilização de python para automatizar funcionalidade do ArcGIS Pro por meio da
 Scripts para: classificar vias, calcular de extensão em metros, gerar camadas para sinalização e exportar relatórios.
 
 ## Estrutura
-- `src/` — ARCPY/
-│
-├── gis_utils/                 ← pacote com funções reutilizáveis
-│   ├── __init__.py
-│   ├── calcular_metragem.py
-│   ├── campos_excel.py
-│   └── selecao_excel.py
-│
-└── main.py
+📂 src/ — Código principal
 
-- `data/` — dados de exemplo (usar apenas amostra; ver observações)
-- `docs/` — screenshots e instruções
-- `requirements.txt` — libs Python (exceto arcpy)
+📂 ARCPY/
+
+📂 gis_utils/ ← Pacote com funções reutilizáveis
+
+📄 __init__.py
+
+📄 calcular_metragem.py
+
+📄 campos_excel.py
+
+📄 selecao_excel.py
+
+📄 main.py
+
+📂 data/ — Dados de exemplo (usar apenas amostra; ver observações)
+
+📂 docs/ — Screenshots e instruções
+
+📄 requirements.txt — Bibliotecas Python (exceto arcpy)
 
 ## Como rodar (local)
 1. Abrir ArcGIS Pro com Python environment que inclua `arcpy`.
