@@ -23,15 +23,9 @@ Scripts para: classificar vias, calcular de extensão em metros, gerar camadas p
 
       📄 main.py
 
-📂 data/ — Dados de exemplo (usar apenas amostra; ver observações)
-
-📂 docs/ — Screenshots e instruções
-
-📄 requirements.txt — Bibliotecas Python (exceto arcpy)
-
 ## Como rodar (local)
 1. Abrir ArcGIS Pro com Python environment que inclua `arcpy`.
-2. Rodar: `python src/classificar_vias.py --input data/exemplo.shp --output data/output.shp`
+2. Rodar: `python src/create.py `
 
 ## Observações
 - `arcpy` não pode ser instalado via pip; precisa do ArcGIS Pro.
