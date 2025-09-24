@@ -7,9 +7,7 @@ Scripts para: classificar vias, calcular de extensão em metros, gerar camadas p
 ## Estrutura
 📂 src/ — Código principal
 
-  📂 ARCPY/
-
-    📂 gis_utils/ ← Pacote com funções reutilizáveis
+    📂 gis_utilities/ ← Pacote com funções reutilizáveis
 
       📄 __init__.py
 
