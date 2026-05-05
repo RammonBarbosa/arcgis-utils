@@ -20,11 +20,17 @@ O código é organizado de forma modular para facilitar a manutenção:
 
 📂 src/
     📂 gis_utilities/            # Pacote com funções reutilizáveis
+
         📄 __init__.py
+
         📄 calculate_extension.py # Cálculos de métricas (metros)
+
         📄 join_excel.py          # União de dados externos (Excel)
+
         📄 select_field.py        # Filtros por categoria/mês
+
         📄 create.py              # Script principal de criação/extração
+
         📄 main.py                # Orquestrador do fluxo
 
 ## Como rodar (local)
@@ -40,9 +46,9 @@ python src/gis_utilities/main.py
 ## Próximos Passos (Roadmap)
 Atualmente o projeto foca em correspondências exatas, mas o plano de evolução inclui:
 
-[ ] Tratamento de Dados: Implementação de lógica via Fuzzy Matching para tratar divergências em nomes de logradouros e reduzir revisões manuais.
+ * Tratamento de Dados: Implementação de lógica via Fuzzy Matching para tratar divergências em nomes de logradouros e reduzir revisões manuais.
 
-[ ] Visualização: Integração direta com dashboards do ArcGIS Online para monitoramento da gestão viária em tempo real.
+ * Visualização: Integração direta com dashboards do ArcGIS Online para monitoramento da gestão viária em tempo real.
 
 ## Observações
 A biblioteca arcpy é proprietária e exige o ArcGIS Pro instalado.
