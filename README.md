@@ -19,6 +19,7 @@ Exportação: Gera relatórios e camadas prontas para análise.
 O código é organizado de forma modular para facilitar a manutenção:
 
 📂 src/
+
     📂 gis_utilities/            # Pacote com funções reutilizáveis
 
         📄 __init__.py
