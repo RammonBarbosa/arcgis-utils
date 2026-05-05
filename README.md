@@ -1,31 +1,50 @@
-# arcgis_utilities
-Este repositório apresenta a utilização de Python, por meio da biblioteca ArcPy, para automatizar processos no ArcGIS Pro relacionados à gestão viária. As ferramentas desenvolvidas permitem criar layers de classificação de vias, calcular extensões em metros, identificar trechos a serem sinalizados e gerar novos shapefiles a partir de categorias selecionadas. O objetivo é aprimorar a análise de dados sobre a malha viária urbana, oferecendo suporte mais ágil e preciso para estudos e tomadas de decisão.
+# ArcGIS Utilities: Automação para Gestão Viária
+Este repositório apresenta a utilização de Python, por meio da biblioteca ArcPy, para automatizar processos no ArcGIS Pro relacionados à gestão viária urbana. As ferramentas desenvolvidas permitem a criação de camadas a partir de bases oficiais, cálculos de extensão e processamento de dados para suporte à tomada de decisão.
 
-## Objetivo
-Scripts para: classificar vias, calcular de extensão em metros, gerar camadas para sinalização e exportar relatórios.
+## Objetivo e Contexto
+A lógica por trás do script nasceu da necessidade de demonstrar em quais vias da cidade o órgão fiscalizador atua. Desenhar polilinha por polilinha, representando cada via com manutenção de sinalização prevista, demandaria um tempo excessivo.
 
-## Estrutura
-📂 src/ — Código principal
+A Solução: O projeto utiliza um arquivo shapefile base da prefeitura e, por meio de uma planilha (Excel) de programação, identifica e extrai automaticamente as vias correspondentes para a criação de um novo shapefile, desenhando-as de forma automática no mapa.
 
-    📂 gis_utilities/ ← Pacote com funções reutilizáveis
+## Funcionalidades
+Classificação de vias: Identifica trechos a serem sinalizados.
 
-      📄 __init__.py
+Geração de Layers: Cria novos shapefiles a partir de categorias selecionadas.
 
-      📄 calculate_extension.py
+Cálculo de Engenharia: Mede extensões em metros de forma automatizada.
 
-      📄 join_excel.py
+Exportação: Gera relatórios e camadas prontas para análise.
 
-      📄 select_field.py
+## Estrutura do Projeto
+O código é organizado de forma modular para facilitar a manutenção:
 
-      📄 create.py
-
-      📄 main.py
+📂 src/
+    📂 gis_utilities/            # Pacote com funções reutilizáveis
+        📄 __init__.py
+        📄 calculate_extension.py # Cálculos de métricas (metros)
+        📄 join_excel.py          # União de dados externos (Excel)
+        📄 select_field.py        # Filtros por categoria/mês
+        📄 create.py              # Script principal de criação/extração
+        📄 main.py                # Orquestrador do fluxo
 
 ## Como rodar (local)
-1. Abrir ArcGIS Pro com Python environment que inclua `arcpy`.
-2. Rodar: `python src/create.py `
+Certifique-se de possuir o ArcGIS Pro instalado (necessário para a biblioteca arcpy).
+
+Utilize o ambiente Python padrão do ArcGIS Pro (arcgispro-py3).
+
+Execute o script principal:
+
+Bash
+python src/gis_utilities/main.py
+
+## Próximos Passos (Roadmap)
+Atualmente o projeto foca em correspondências exatas, mas o plano de evolução inclui:
+
+[ ] Tratamento de Dados: Implementação de lógica via Fuzzy Matching para tratar divergências em nomes de logradouros e reduzir revisões manuais.
+
+[ ] Visualização: Integração direta com dashboards do ArcGIS Online para monitoramento da gestão viária em tempo real.
 
 ## Observações
-- `arcpy` não pode ser instalado via pip; precisa do ArcGIS Pro.
-- Dados completos não são versionados aqui (ver `data/README.md`).
+A biblioteca arcpy é proprietária e exige o ArcGIS Pro instalado.
 
+Dados sensíveis ou volumosos não são versionados neste repositório.
